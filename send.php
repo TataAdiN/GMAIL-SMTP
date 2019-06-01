@@ -10,8 +10,8 @@
                 date_default_timezone_set('Etc/UTC');
                 require 'vendor/autoload.php';
 
-                $kepada = 'tataa2237@gmail.com';
-                $nama = 'Tata Adi N';
+                $kepada = 'email tujuan';
+                $nama = 'nama orang yang dituju';
                 $judul_email = 'Kirim Email dengan Gmail API';
                 $link = 'tataadin.blogspot.com';
                 
@@ -21,9 +21,9 @@
                 $mail->Host = 'smtp.gmail.com';
                 $mail->Port = 587;
                 $mail->SMTPAuth = true;
-                $mail->Username= 'novemberend99@gmail.com';
-                $mail->Password= 'takbolehlewat';
-                $mail->setFrom('novemberend99@gmail.com','admin-noreply');
+                $mail->Username= 'alamat email mu';
+                $mail->Password= 'password email mu';
+                $mail->setFrom('alamat email mu','admin-noreply'); //untuk memunculkan alias
                 $mail->addAddress($kepada);
                 $mail->Subject = $judul_email;
                 $mail->CharSet = 'utf-8';
